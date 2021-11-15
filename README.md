@@ -1,3 +1,3 @@
 # Portfolio
 <li> Basic HTML-CSS template </li>
-<li> Portfolio for Company requirement </li>
+<li> Portfolio as per Company suggestion </li>
