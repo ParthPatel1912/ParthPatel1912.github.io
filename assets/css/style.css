@@ -310,7 +310,7 @@ h6 {
 .mobile-nav-toggle {
     position: fixed;
     right: 15px;
-    top: 10px;
+    top: 15px;
     z-index: 9998;
     border: 0;
     background: none;
@@ -321,7 +321,7 @@ h6 {
     cursor: pointer;
     border-radius: 50px;
     padding: 5px;
-    background-color: rgba(111, 107, 107, 0.514);
+    background-color: rgba(111, 107, 107, 0.450);
     color: #fff;
 }
 
