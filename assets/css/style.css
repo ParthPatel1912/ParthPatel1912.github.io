@@ -353,6 +353,12 @@ h6 {
     position: relative;
 }
 
+@media (max-width: 1024px) {
+    #hero {
+        background-position: 72%;
+    }
+}
+
 @media (min-width: 992px) {
     #hero {
         padding-left: 160px;
