@@ -10,6 +10,10 @@
 # General
 --------------------------------------------------------------*/
 
+.section-bg {
+    background: #f5f8fd;
+}
+
 .section-title {
     text-align: center;
     padding: 30px 0;
@@ -344,7 +348,7 @@ h6 {
 #hero {
     width: 100%;
     height: 100vh;
-    background: url("../img/hero-bg.jpg") top right no-repeat;
+    background: url("../img/Untitled-1.jpg") top right no-repeat;
     background-size: cover;
     position: relative;
 }
@@ -552,6 +556,25 @@ section {
     font-size: 14px;
 }
 
+.facts .count-box:hover {
+    background-color: #9898a7cb;
+    color: #149ddd;
+    box-shadow: 5px 10px #3a3b3c;
+    -webkit-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    border-radius: 7px;
+    box-shadow: rgba(22, 4, 16, 0.4) 5px 5px, rgba(22, 2, 16, 0.3) 10px 10px, rgba(22, 4, 16, 0.2) 15px 15px, rgba(22, 4, 16, 0.1) 20px 20px, rgba(22, 4, 16, 0.05) 25px 25px;
+    /* box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px; */
+    /* box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px; */
+    font-weight: 700;
+}
+
+.facts .count-box:hover i {
+    background-color: #fff;
+    color: #0563bb;
+}
+
 
 /*--------------------------------------------------------------
 # Akills
@@ -622,7 +645,7 @@ section {
 
 .resume .resume-item h5 {
     font-size: 16px;
-    background: #f7f8f9;
+    background: #c7c7c78d;
     padding: 5px 15px;
     display: inline-block;
     font-weight: 600;
@@ -890,6 +913,10 @@ section {
     transition: all ease-in-out 0.3s;
     background: #fff;
     box-shadow: 0px 5px 90px 0px rgba(110, 123, 131, 0.05);
+    border-radius: 7px;
+    overflow: hidden;
+    z-index: 1;
+    position: relative;
 }
 
 .services .icon-box .icon {
@@ -937,13 +964,43 @@ section {
     margin-bottom: 0;
 }
 
+
+/* .services .icon-box:hover {
+    border-color: #fff;
+    box-shadow: 0px 0 35px 0 rgba(0, 0, 0, 0.08);
+    background-color: #4faaff;
+    color: white;
+    border-radius: 7px;
+    transition: all ease-in-out 0.4s;
+    z-index: -1;
+} */
+
+.services .icon-box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 0;
+    transition: ease-in-out 0.3s;
+    z-index: -1;
+}
+
+.services .icon-box:hover::before {
+    background: #149ddd;
+    height: 100%;
+    width: 100%;
+    border-radius: 0px;
+}
+
 .services .icon-box:hover {
     border-color: #fff;
     box-shadow: 0px 0 35px 0 rgba(0, 0, 0, 0.08);
+    color: white;
 }
 
 .services .iconbox-blue i {
-    color: #47aeff;
+    color: #0e5ce3;
 }
 
 .services .iconbox-blue:hover .icon i {
@@ -951,7 +1008,7 @@ section {
 }
 
 .services .iconbox-blue:hover .icon path {
-    fill: #47aeff;
+    fill: #0e5ce3;
 }
 
 .services .iconbox-orange i {
